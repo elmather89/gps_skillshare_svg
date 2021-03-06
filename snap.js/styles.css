@@ -1,0 +1,46 @@
+html,
+body {
+    background: rgb(0, 128, 128);
+    /* background: radial-gradient(circle, rgba(201,112,100,1) 0%, rgba(0, 128, 128,1) 35%, rgba(0, 128, 128,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.main-title {
+    color: white;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.st0 {
+    fill: #C6BEB5;
+}
+
+.st1 {
+    fill: #7F3818;
+}
+
+.st2 {
+    fill: #AD4D23;
+}
+
+.st3 {
+    fill: #2F2822;
+}
+
+.st4 {
+    fill: #F9F6F2;
+}
+
+.st5 {
+    fill: #C15D25;
+}
+
+.st6 {
+    fill: #A03E1C;
+}
+
+.st7 {
+    fill: #FFFFFF;
+}
