@@ -1,18 +1,20 @@
 $(document).ready(function () {
     console.log('hello snap.js');
 
-    // define the Snap target
     var dog = $('#dog');
     var tail = $('#tail');
-    var mouth = $('#mouthLine');
-    var topWags = $('#topWagLines');
-    var bottomWags = $('#bottomWagLines');
+    var mouth = $('#mouthLine'),
+        tennisball = Snap('#ball');
+    // var topWags = $('#topWagLines');
+    // var bottomWags = $('#bottomWagLines');
+    var speed = 500,
+        easing = mina.easeinout,
+        hovering = true;
 
     function againIn() {
         if (hovering) {
             tailWag.animate({ 'd': pathConfig.to }, speed, easing, againOut);
             topWagLines.animate({ 'opacity': 1 }, speed, easing, againOut);
-            // bottomWagLines.animate({ 'opacity': 0 }, speed, easing, againOut);
         };
     }
 
@@ -22,12 +24,9 @@ $(document).ready(function () {
         bottomWagLines.animate({ 'opacity': 1 }, speed, easing, againIn);
     }
 
-    var speed = 500,
-        easing = mina.easeinout,
-        hovering = true;
-
+    // define the Snap target
     // Tail
-    var tailWag = Snap(document.querySelector('#tail')),
+    var tailWag = Snap('#tail'), // Snap() allows you to either create a drawing surface or wrap an existing SVG element. 
         path = tailWag.attr('d'),
         pathConfig = {
             from: path,
@@ -35,24 +34,26 @@ $(document).ready(function () {
         };
 
     // Smile
-    var smile = Snap(document.querySelector('#mouthLine')),
+    var smile = Snap('#mouthLine'),
         pathSmile = smile.attr('d'),
         pathConfigSmile = {
             from: pathSmile,
             to: mouth.attr('data-path-destination'),
         };
 
-    // Top wag lines
-    topWags.css('opacity', '0');
-
-    // Bottom wag lines
-    bottomWags.css('opacity', '0');
-
     dog.on('mouseenter', function () {
         console.log('wag tail');
         hovering = true;
         againIn(); // tail action
         smile.animate({ 'd': pathConfigSmile.to }, speed, easing,); // smile action
+
+        /**
+         * tennis ball
+         */
+        // var ball = Snap('100%', '100%').attr({ id: 'ball', });
+        // tennisball.attr('viewBox', '0 0 400 225.5');
+        var ballSvg = tennisball.circle(100, 100, 20).attr({ id: 'ballSvg', fill: 'gold', stroke: 'white', strokeWidth: '5px', position: 'relative', zIndex: '100', });
+        tennisball.animate({ 'opacity': 1, 'transform': 't0,160%,', 'rotate': '180deg', }, 700, mina.bounce,);
     });
 
     dog.on('mouseleave', function () {
@@ -60,6 +61,7 @@ $(document).ready(function () {
         hovering = false;
         againOut(); // tail action
         smile.animate({ 'd': pathConfigSmile.from }, speed, easing,); // smile action
+        tennisball.animate({ 'opacity': 0, 'transform': 't0,160%, t100%,160%', }, 700, easing,);
     });
 
 });

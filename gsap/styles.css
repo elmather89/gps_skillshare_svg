@@ -3,6 +3,10 @@ body {
     background: teal;
 }
 
+header nav .nav-item a {
+    color: white;
+}
+
 .main-title {
     color: white;
     text-transform: uppercase;
