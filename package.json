@@ -1,0 +1,17 @@
+{
+  "name": "gps_skillshare_svg_animations",
+  "version": "1.0.0",
+  "description": "skillshare demo",
+  "main": "index.html",
+  "repository": "https://github.com/elmather89/gps_skillshare_svg.git",
+  "author": "lizmather <liz@gpsimpact.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:style": "node-sass style.scss style.css",
+    "watch": "nodemon -e scss -x \"yarn run build:style\""
+  },
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}

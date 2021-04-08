@@ -140,3 +140,10 @@ pre {
   position: relative;
   z-index: 100;
   opacity: 0; }
+
+.dog-container svg {
+  max-height: 100vh;
+  position: relative; }
+  .dog-container svg #left_x5F_eye,
+  .dog-container svg #right_x5F_eye {
+    position: relative; }

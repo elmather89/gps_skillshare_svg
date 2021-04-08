@@ -1,0 +1,16 @@
+.dog-container {
+
+    svg {
+        max-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+
+        #left_x5F_eyebrow,
+        #right_x5F_eyebrow {
+            position: relative;
+            transform-origin: 0;
+        }
+    }
+}
