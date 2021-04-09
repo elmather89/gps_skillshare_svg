@@ -50,9 +50,8 @@ $(document).ready(function () {
         /**
          * tennis ball
          */
-        // var ball = Snap('100%', '100%').attr({ id: 'ball', });
-        // tennisball.attr('viewBox', '0 0 400 225.5');
-        // Each letter is a command. There are four commands: 
+        // Transform Property in the .animate() method: Each letter is a command. 
+        // There are four commands: 
         // t is for translate, r is for rotate, s is for scale and m is for matrix.
         var ballSvg = tennisball.circle(100, 100, 20).attr({ id: 'ballSvg', fill: 'gold', stroke: 'white', strokeWidth: '5px', position: 'relative', zIndex: '100', });
         tennisball.animate({ 'opacity': 1, 'transform': 't0,160%,', 'rotate': '180deg', }, 700, mina.bounce,);

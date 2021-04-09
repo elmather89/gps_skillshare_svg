@@ -143,7 +143,26 @@ pre {
 
 .dog-container svg {
   max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .dog-container svg #left_x5F_eyebrow,
+  .dog-container svg #right_x5F_eyebrow {
+    position: relative;
+    transform-origin: 0; }
+
+#dog_css_ani {
   position: relative; }
-  .dog-container svg #left_x5F_eye,
-  .dog-container svg #right_x5F_eye {
-    position: relative; }
+  #dog_css_ani:hover #ear {
+    animation: rotateEar infinite ease-in-out 1s; }
+  #dog_css_ani #ear {
+    position: relative;
+    transform-origin: 0%; }
+
+@keyframes rotateEar {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(45deg); }
+  100% {
+    transform: rotate(0deg); } }

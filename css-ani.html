@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSAP</title>
+    <title>CSS Animation</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -16,6 +16,11 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- GSAP Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/EasePack.min.js"></script>
 
 </head>
 
@@ -26,7 +31,7 @@
             <div class="col-md-8 pb-5 text-center">
                 <div class="row justify-content-center align-items-center align-content-center">
                     <div class="col-md-10 text-center">
-                        <h1 class="text-center">GSAP</h1>
+                        <h1 class="text-center">CSS Animation</h1>
                         <a href="./index.html">
                             <button type="button" class="nes-btn is-primary">
                                 Home
@@ -44,10 +49,9 @@
 
                 <?xml version="1.0" encoding="utf-8"?>
                 <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="dog" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 349.7 225.5"
-                    preserveAspectRatio="xMinYMin meet" style="enable-background:new 0 0 349.7 225.5;"
-                    xml:space="preserve">
+                <svg version="1.1" id="dog_css_ani" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 349.7 225.5" preserveAspectRatio="xMinYMin meet"
+                    style="enable-background:new 0 0 349.7 225.5;" xml:space="preserve">
                     <style type="text/css">
                         .st0 {
                             fill: #C6BEB5;
@@ -80,15 +84,7 @@
                         .st7 {
                             fill: #FFFFFF;
                         }
-
-                        .tennisball {
-                            fill: yellow;
-                            position: relative;
-                            z-index: 10000;
-                        }
                     </style>
-                    <path id="circle" class="tennisball" d="M490.1,280.649c0,44.459-36.041,80.5-80.5,80.5s-80.5-36.041-80.5-80.5s36.041-80.5,80.5-80.5
-	S490.1,236.19,490.1,280.649z" />
                     <g id="dog-body">
                         <path class="st0" d="M69.9,207.3c-6.7,1.5-14,3-20.1,0.1c-7.4-3.5-10.8-13-8.6-20.8s9.4-13.7,17.3-15.8c-2.4,9.3,1.1,19.2,8.9,24.8
 		c1.9,1.3,4,2.4,5.5,4.2s1.8,4.7,0.1,6.3C72,206.7,71,207.1,69.9,207.3z" />
@@ -152,14 +148,7 @@
         </div>
     </div>
 
-    <!-- GSAP Animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/EasePack.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-
-    <script src="./gsap/actions.js"></script>
+    <script src="./css-animation/actions.js"></script>
 </body>
 
 <footer>

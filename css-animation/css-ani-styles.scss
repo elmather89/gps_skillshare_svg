@@ -1,0 +1,28 @@
+#dog_css_ani {
+    position: relative;
+
+    &:hover {
+        #ear {
+            animation: rotateEar infinite ease-in-out 1s;
+        }
+    }
+
+    #ear {
+        position: relative;
+        transform-origin: 0%;
+    }
+}
+
+@keyframes rotateEar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
